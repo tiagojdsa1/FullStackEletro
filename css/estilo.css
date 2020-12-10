@@ -15,19 +15,56 @@ body {
 }
 
 .menu a {
-    color: white;    
+    color: white;   
+    text-decoration: none;
+
+}
+/* CONFIGURAÇÃO DA PAGIA PRODUTOS */
+
+.categorias {
+    width: 20%;
+    float: left;
+    position: relative;
 }
 
-#titulo {
+.produtos {
+    width: 80%;
+    display: inline;    
+}
+
+.produtos2 {
+    width: 80%;
+    right: 20%;
+    display: inline;    
+}
+.box-produto {
+    width: 20%;
+    float: left;
+    display: line;    
+}
+
+.imagens {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.descricao {
     text-align: center;
     font-size: 16px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#preco-cor {
+.preco {
     color: red;
+    text-align: center;
 }
 
 .menu {
     background-color: rgb(255, 152, 35);
+}
+
+#rodape {
+    text-align: center;
+    width: 100%;
 }
