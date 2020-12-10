@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Contato</title>
 </head>
 <body>
-    <table width="100%" bgcolor = "gree">
+    <!-- INICIO MENU -->
+    <table width="100%" bgcolor = "gree" class="menu">
         <tr>
-            <td align="center" width="25%" ><a href="index.html"> 
-                <font color="black" ><img width="100px"src="img/logo1.png" alt="Logo Coffe"></font>
-            </a></td>
-            <td align="center" width="25%" ><a href="produtos.html"> 
-                <font color="black" >Produtos</font>
-            </a></td>
-            <td align="center" width="25%" ><a href="loja.html"> 
-                <font color="black" >Nossas lojas</font>
-            </a></td>
-            <td align="center" width="25%" ><a href="contato.html">
-                <font color="black" >contato</font>
-            </a></td>        
+            <td align="center" width="25%" ><a href="index.html"><img width="100px"src="img/logo1.png" alt="Logo Coffe"></a></td>
+            <td align="center" width="25%" ><a href="produtos.html">Produtos</a></td>
+            <td align="center" width="25%" ><a href="loja.html">Nossas lojas</a></td>
+            <td align="center" width="25%" ><a href="contato.html">contato</a></td>        
     </table>
-    <h2 align="center">Nossos Contatos</h2>
+    <!-- FIM DO MENU -->
+    <h2 id="text-principal">Nossos Contatos</h2>
     <hr>
     <table border="0" width="100%" cellpadding="20">
         <tr>
@@ -37,9 +32,9 @@
     </table>
         <form action="">
             <h4>Nome:</h4>
-            <input type="text" style="width: 400px">
+            <input type="text" style="width: 400px" placeholder="Digite seu nome">
             <h4>Menssagem:</h4>
-            <textarea style="width: 400px" name="" id="" cols="30" rows="10"></textarea>            
+            <textarea style="width: 400px" name="" id="" cols="30" rows="10" placeholder="Digite seu texto"></textarea>            
 
             <input type="button" value="Enviar">
         </form>
@@ -47,12 +42,12 @@
     <hr>
     <center>
         <span>
-            <p>
-                <font face="Arial" color="gree"><b>Formas de pagamento:</b></font>
-            </p>
-                <img src="img/forma-pagamento.png" alt="Formas de pagamentos">
+            <p><b id="forma-pagamento">Formas de pagamento:</b></p>
+            <img src="img/forma-pagamento.png" alt="Formas de pagamentos">
         </span>
     </center>
-    <center face="Arial" sice="2"> &copy; Recode Pro</center>
+
+    <br> <br>
+    <center> &copy; Recode Pro</center>
 </body>
 </html>
