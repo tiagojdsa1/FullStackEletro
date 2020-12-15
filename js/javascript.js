@@ -1,5 +1,7 @@
 function exibir_categoria(categoria){
     //alert(categoria);
 
-    let elementos = 
+    let elementos = document.getElementsByClassName('box-produto');
+    console.log(elementos);
+
 }
