@@ -21,9 +21,9 @@ body {
 }
 /* CONFIGURAÇÃO DA PAGIA PRODUTOS */
 
-.categorias {
+.categoria {
     width: 250px;        
-    height: 590px;
+    height: 600px;
     float: left;
     position: relative;
 }
@@ -61,12 +61,21 @@ body {
 }
 
 .menu {
-    background-color: rgb(255, 152, 35);
-    width: 100%;
-    
+    background-color: rgb(255, 152, 35);    
 }
 
 #rodape {
     text-align: center;
     width: 100%;
+}
+
+.submenu {
+    width: 20%;
+    float: right;
+    margin: -49px 40px 0px 0px;
+}
+
+.logo {
+    width: 20%;
+    margin: 0px 0px -6px 200px;
 }

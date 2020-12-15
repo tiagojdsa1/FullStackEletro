@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">    
     <link rel="stylesheet" href="css/estilo.css">
     <title>Produtos Full stack eletro</title>
-    <style>
-               
-    </style> 
+    <script src="js/javascript.js"></script>
+    
 </head>
 <body>
      <!-- INICIO MENU -->
-     <nav class="menu">
-        <a href="index.html"><img width="100px"src="img/logo1.png" alt="Logo Coffe"></a>
-        <a href="produtos.html">Produtos</a>
-        <a href="loja.html">Nossas lojas</a>
-        <a href="contato.html">contato</a>
-
-    </nav>
+    <div class="menu">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo1.png" alt="Logo" width="100px"></a>
+        </div>
+        <div class="submenu">
+            <a href="contato.html"><p>Contato</p></a>
+        </div>
+        <div class="submenu">
+            <a href="loja.html"> <p>Nossas lojas</p></a>
+        </div>
+        <div class="submenu">
+            <a href="produtos.html"> <p>Produtos</p></a>
+        </div>
+    </div>
     <!-- FIM DO MENU -->
+
     <!-- inicio do cabeçalho da pagina -->
     <header><h2 id="text-principal">Produtos</h2></header>    
     <hr>
     <!-- Fim do cabeçalho da pagina -->
 
-    <section class="categorias">
+    <div class="categoria">
         <h3>Categorias</h3>
-                <ol>
-                    <li> Geladeira (5)</li>
-                    <li> Fogões (2)</li>
-                    <li> Microondas (4)</li>
-                    <li> Lavadora de roupas (3)</li>
-                    <li> Lava louça (7)</li>
-                </ol>
-    </section>
+        <ul>
+            <li onclick="exibir_categoria('Geladeira')">Geladeira (3)</li>
+            <li onclick="exibir_categoria('fogao')">Fogões (2)</li>
+            <li onclick="exibir_categoria('Microondas')">Microondas (2)</li>
+            <li onclick="exibir_categoria('Lavadora')">Lavadora de roupas (3)</li>
+            <li onclick="exibir_categoria('Cadeira')">Cadeira (2)</li>
+        </ul>
+    </div>
 
         <section class="produtos">
             <div class="box-produto">
@@ -58,7 +64,7 @@
                  <p class="preco">R$ 1.019,00</p>
             </div>
             <div class="box-produto">
-                <img class="imagens" src="img/produtos/geladeira.png" alt="Geladeira" width="120px"><br>
+                <img class="imagens" src="img/produtos/microondas.png" alt="Geladeira" width="120px"><br>
                 <p class="descricao">Geladeira Frost free Brastemp Side Inverse 560 litros</p>
                 <hr>
                  <p class="descricao"><strike> R$ 6.369,00</strike><br></p> 
@@ -67,7 +73,14 @@
         </section>
         <section class="produtos2">
             <div class="box-produto">
-                <img class="imagens" src="img/produtos/geladeira.png" alt="Geladeira" width="120px"><br>
+                <img class="imagens" src="img/produtos/cadeira.png" alt="Geladeira" width="120px"><br>
+                <p class="descricao">Geladeira Frost free Brastemp Side Inverse 560 litros</p>
+                <hr>
+                 <p class="descricao"><strike> R$ 6.369,00</strike><br></p> 
+                 <p class="preco">R$ 5.019,00</p>
+            </div>
+            <div class="box-produto">
+                <img class="imagens" src="img/produtos/microondas.png" alt="Geladeira" width="120px"><br>
                 <p class="descricao">Geladeira Frost free Brastemp Side Inverse 560 litros</p>
                 <hr>
                  <p class="descricao"><strike> R$ 6.369,00</strike><br></p> 
@@ -81,19 +94,42 @@
                  <p class="preco">R$ 5.019,00</p>
             </div>
             <div class="box-produto">
-                <img class="imagens" src="img/produtos/geladeira.png" alt="Geladeira" width="120px"><br>
+                <img class="imagens" src="img/produtos/fogao.png" alt="Geladeira" width="120px"><br>
                 <p class="descricao">Geladeira Frost free Brastemp Side Inverse 560 litros</p>
                 <hr>
                  <p class="descricao"><strike> R$ 6.369,00</strike><br></p> 
                  <p class="preco">R$ 5.019,00</p>
             </div>
-            <div class="box-produto">
-                <img class="imagens" src="img/produtos/geladeira.png" alt="Geladeira" width="120px"><br>
-                <p class="descricao">Geladeira Frost free Brastemp Side Inverse 560 litros</p>
-                <hr>
-                 <p class="descricao"><strike> R$ 6.369,00</strike><br></p> 
-                 <p class="preco">R$ 5.019,00</p>
-            </div>
+            <section class="produtos">
+                <div class="box-produto">
+                    <img class="imagens" src="img/produtos/lava-roupa.png" alt="Geladeira" width="120px"><br>
+                    <p class="descricao">Geladeira Frost free Brastemp Side Inverse 560 litros</p>
+                    <hr>
+                     <p class="descricao"><strike> R$ 6.369,00</strike><br></p> 
+                     <p class="preco">R$ 5.019,00</p>
+                </div>
+                <div class="box-produto">
+                    <img class="imagens" src="img/produtos/cadeira.png" alt="Geladeira" width="120px"><br>
+                    <p class="descricao">Geladeira Frost free Brastemp Side Inverse 560 litros</p>
+                    <hr>
+                     <p class="descricao"><strike> R$ 3.590,00</strike><br></p> 
+                     <p class="preco">R$ 2.300,00</p>
+                </div>
+                <div class="box-produto">
+                    <img class="imagens" src="img/produtos/lava-roupa.png" alt="Geladeira" width="120px"><br>
+                    <p class="descricao">Geladeira Frost free Brastemp Side Inverse 560 litros</p>
+                    <hr>
+                     <p class="descricao"><strike> R$ 2.369,00</strike><br></p> 
+                     <p class="preco">R$ 1.019,00</p>
+                </div>
+                <div class="box-produto">
+                    <img class="imagens" src="img/produtos/geladeira.png" alt="Geladeira" width="120px"><br>
+                    <p class="descricao">Geladeira Frost free Brastemp Side Inverse 560 litros</p>
+                    <hr>
+                     <p class="descricao"><strike> R$ 6.369,00</strike><br></p> 
+                     <p class="preco">R$ 5.019,00</p>
+                </div>            
+            </section>
         </section>
         
        
