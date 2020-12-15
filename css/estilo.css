@@ -21,7 +21,7 @@ body {
 }
 /* CONFIGURAÇÃO DA PAGIA PRODUTOS */
 
-.categoria {
+.categorias {
     width: 250px;        
     height: 600px;
     float: left;
@@ -31,12 +31,8 @@ body {
 .produtos {
     width: 80%;
     display: inline;    
-}
+}    
 
-.produtos2 {    
-    width: 80%;    
-    display: inline;      
-}
 .box-produto {
     width: 20%;
     float: left;
