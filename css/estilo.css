@@ -29,7 +29,7 @@ body {
 }
 
 .produtos {
-    width: 80%;
+    width: 100%;
     display: inline;    
 }    
 
@@ -42,7 +42,9 @@ body {
 .imagens {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    cursor: pointer;
+    
 }
 
 .descricao {
@@ -60,9 +62,8 @@ body {
     background-color: rgb(255, 152, 35);    
 }
 
-#rodape {
-    text-align: center;
-    width: 100%;
+.rodape {
+    text-align: center;             
 }
 
 .submenu {
@@ -74,4 +75,8 @@ body {
 .logo {
     width: 20%;
     margin: 0px 0px -6px 200px;
+}
+
+#linha {
+    margin: 8px;
 }
